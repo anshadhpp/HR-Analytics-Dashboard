@@ -1,0 +1,53 @@
+# HR Analytics Report
+
+1. Executive Summary
+This report provides an organizational overview of headcount, compensation structure, and bonus allocations across departments and regional hubs based on employee records from the HR Database.
+
+The primary objective is to evaluate payroll allocation efficiency, identify compensation imbalances, and establish baseline workforce metrics for organizational planning.
+
+2. Key Performance Indicators (KPIs)
+Metric	Value
+Total Headcount	35 employees
+Active Business Divisions	7 operating departments
+Total Base Payroll Spend	$90,189.28
+Average Base Salary	$2,576.84
+Total Incentive/Bonus Spend	$16,010.00
+Overall Total Compensation	$106,199.28
+Incentive Eligibility / Payout Rate	80.0% (28 of 35 employees)
+Average Incentive (Recipients)	$571.79
+3. Departmental Distribution & Cost Analysis
+Department	Headcount	Base Payroll ($)	Avg. Salary ($)	Total Bonus ($)	Total Comp ($)
+R and D	7	22,650.56	3,235.79	3,875.00	26,525.56
+Marketing	7	17,360.80	2,480.11	2,830.00	20,190.80
+Sales	7	17,220.35	2,460.05	1,925.00	19,145.35
+Security	5	14,055.89	2,811.18	2,790.00	16,845.89
+Accounts	4	9,951.68	2,487.92	1,850.00	11,801.68
+Technical	4	5,950.00	1,487.50	2,620.00	8,570.00
+Auditing	1	3,000.00	3,000.00	120.00	3,120.00
+Total	35	$90,189.28	$2,576.84	$16,010.00	$106,199.28
+Key Departmental Observations
+R&D Drives Overall Spend: R&D commands the highest share of the total compensation pool ($26,525.56, or ~25.0%) and maintains the highest departmental average base salary ($3,235.79).
+
+Technical Division Bonus Weight: While Technical staff have the lowest base pay average ($1,487.50), their bonus allocation ($2,620.00) represents a substantial 44.0% of their base salary spend.
+
+Unstaffed Business Units: The catalog lists 9 defined units, but Testing (Dept ID 70) and Maintenance (Dept ID 90) currently record 0 employees, representing either vacant divisions or outsourced services.
+
+4. Geographic Workforce Footprint
+Location Code	Headcount	Headcount Share (%)	Total Base Spend ($)	Avg. Base Salary ($)
+Chennai (chn)	10	28.6%	26,335.33	2,633.53
+Hyderabad (hyd)	8	22.9%	21,352.03	2,669.00
+Delhi (delhi)	7	20.0%	14,270.76	2,038.68
+Bangalore (blr)	3	8.6%	7,540.92	2,513.64
+Pune (pune)	3	8.6%	10,530.00	3,510.00
+Other / Test Hubs (aaa, bbb)	4	11.4%	10,160.24	2,540.06
+Key Geographic Observations
+Primary Delivery Hubs: Chennai, Hyderabad, and Delhi account for 71.4% of the entire organizational workforce.
+
+Salary Disparity: Pune exhibits the highest average base compensation ($3,510.00), driven by specialized technical/R&D roles, while Delhi averages the lowest among major named hubs ($2,038.68).
+
+5. Strategic Recommendations
+Standardize Location Metadata: Normalize non-standard location strings (aaa, bbb) during the Power Query ETL pipeline to maintain clean geographic reporting.
+
+Review Incentive Equity: 20% of employees (7 individuals) received no bonus incentive. Align eligibility criteria to ensure performance bonuses are transparently measured across technical and support functions.
+
+Address Zero-Staffed Departments: Audit Testing and Maintenance departments in the database to determine whether to archive inactive cost centers or initiate hiring pipelines.
