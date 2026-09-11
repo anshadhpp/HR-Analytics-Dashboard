@@ -14,6 +14,8 @@ An interactive Power BI dashboard designed to monitor workforce distribution, co
 ---
 
 ## 🖥️ Dashboard Preview
+![Dashboard Overview](assets/dashboard_overview.png)
+
 ---
 
 ## 💡 Key Business Questions Answered
